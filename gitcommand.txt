@@ -9,3 +9,14 @@ git push -u origin master
 Pushing existing from command line
 git remote add origin git@github.com:WilliamZ345/myTools.git
 git push -u origin master
+
+Checking for existing SSH keys
+ls -al ~/.ssh
+
+Creating new SSH key
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+Copying SSH Public key to clipboard to add onto Github
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
