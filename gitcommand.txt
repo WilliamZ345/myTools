@@ -1,0 +1,11 @@
+Create new repository on command line
+"# myTools" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:WilliamZ345/myTools.git
+git push -u origin master
+
+Pushing existing from command line
+git remote add origin git@github.com:WilliamZ345/myTools.git
+git push -u origin master
